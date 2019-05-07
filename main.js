@@ -1,7 +1,7 @@
-//0〜5までの数値をランダムに作成
-var number = Math.floor(Math.random() * 6);
+//1〜6までの数値をランダムに作成
+var number = Math.floor(Math.random() * 6 + 1);
 //入力された数値を整数に変換して、変数answerに代入
-var answer = parseInt(window.prompt('数当てゲーム。0〜5の数字を入力して下さい。'));
+var answer = parseInt(window.prompt('数当てゲーム。1〜6の数字を入力して下さい。'));
 
 //変数を宣言
 var message;
@@ -17,7 +17,7 @@ else if(answer > number){
   massage = 'はずれ！もっと小さな数です。';
 }
 else{
-  massage = '0~5の数字を入力して下さい。';
+  massage = '1〜6の数字を入力して下さい。';
 }
 window.alert(massage);
 
