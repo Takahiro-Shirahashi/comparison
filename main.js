@@ -21,5 +21,5 @@ else{
 }
 window.alert(massage);
 
-//答えを知りたい人の為のアレンジ
+//今回の正解を表示する
 document.getElementById('result').textContent = '今回の正解は'+number+'でした！';
